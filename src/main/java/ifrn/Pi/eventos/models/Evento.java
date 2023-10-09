@@ -1,11 +1,25 @@
 package ifrn.Pi.eventos.models;
 
-public class Evento {
+import jakarta.persistence.Entity;
 
+@Entity
+public class Evento {
+	
+	private long id;
 	private String nome;
 	private String local;
 	private String data;
 	private String horario;
+
+	
+	
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
 
 	public String getNome() {
 		return nome;
